@@ -1,0 +1,99 @@
+*{margin: 0;
+    padding: 0;
+    
+}
+a{
+    text-decoration: none;
+}
+.navoption{
+    height: 6vmin;
+    background-color: white;
+    border-bottom: 2px solid black;
+    display: flex;
+}
+
+.div_nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 3vmin;
+    margin-top: 1vmin;
+    gap: 3vmin;
+}
+.titel_div{
+    padding-left: 5vmin;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vmin;
+    font-size: 2.5vmin;
+    font-weight: 700;
+}
+.section2{
+    width: 10vmin;
+}
+
+.cont_box_hind{
+    width: 100%;
+    height: 410vmin;
+    background-color: white;
+    /* display: flex; */
+    justify-content: center; 
+    /* align-items: center; */
+   
+}
+.box_cont1{
+    height: 50vmin;
+    width: 99%;
+    display: flex;
+    align-items: center;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    margin: 2px;
+    box-shadow: 1px 1px 5px black;
+    
+    margin-left: 1vmin;
+    margin-top: 1vmin;
+    gap: 2vmin;
+  
+}
+.name{
+    display: flex;
+    gap: 1vmin;
+}
+#company{
+    color: #ed9b1e;
+}
+.Tagline{
+    text-align: center;
+    padding-left: 5vmin;
+}
+.Tagline1{
+    text-align: left;
+    padding-left: 5vmin;
+}
+
+.tag_photo{
+    height: 40vmin;
+    width: 60vmin;
+    background-color: yellow;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgb(212, 212, 202);
+    position: absolute;
+    right: 5vmin;
+}
+.photo_div{
+    /* background-image: url("C:\\Users\\kumar\\OneDrive\\Documents\\Desktop\\contruction\\businessman-discussing-blueprint-with-architects.jpg"); */
+    width: 60vmin;
+    height: 40vmin;
+    background-size: cover;
+    border-radius: 10px;
+} 

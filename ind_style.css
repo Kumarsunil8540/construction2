@@ -1,0 +1,331 @@
+*{margin: 0;
+    padding: 0;
+    
+}
+a{
+    text-decoration: none;
+}
+
+
+
+
+
+h2{
+    font-size: 3vmin;
+}
+
+.border{
+    border: 2px solid transparent;
+    
+}
+.border:hover{
+    border: 2px solid #00ed27;
+    padding: 1vmin;
+    cursor: pointer;
+
+}
+
+/* header */
+.header{
+    height: 13vmin;
+    width: 100%;
+    /* position: fixed; */
+   
+}
+#head_color{
+    background-color: #FFB22C;
+    height: 13vmin;
+    display: flex;
+    /* justify-content: center; */
+    align-items:center ;
+}
+#logodiv{
+    height: 12vmin;
+    width: 20vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0.5vmin;
+    padding-left: 1vmin;
+    
+}
+.logo{
+    height: 11vmin;
+    width: 20vmin;
+    background-color: rgb(31, 31, 27);
+    background-image: url("1-removebg-preview.png"); 
+    /* margin:0.5vmin ;
+    margin-top: 0.5vmin; */
+    background-size: cover;
+    /* object-fit: cover; */
+    border-radius: 10px;
+    text-align: center; 
+}
+.name_div{
+    height: 12vmin;
+    width: 150vmin;
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    padding-left: 2vmin;
+    gap: 2vmin;
+}
+    
+.name_div h1{
+    font-size: 5vmin;
+    font-weight: 700;
+    color: black;
+    margin-left:2vim;
+}
+
+.contact{
+    color: black;
+    position: absolute;
+    right: 35vmin;
+}
+.contact{
+    font-size: 3vmin;
+    font-weight: 600;
+    padding: 1vmin;
+    border-radius: 2vmin;
+    
+}
+.header_icon{
+    position: absolute;
+    right: 3vmin;
+}
+
+
+.icon_size i{
+    font-size: 5vmin;
+    padding: 2vmin;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#containt_part{
+
+    height: 100vmin;
+    width: 100%;
+    display: flex;
+    background-color: #d5d511;
+    align-items: center;
+    justify-content: center;
+    background-image: url("7592547.jpg");
+    background-size: cover;
+}
+
+#box1{
+    height: 40vmin;
+    width: 80vmin;
+    border: 3px solid black;
+    margin-top: 40%;
+    color: black;
+    /* display: flex;
+    justify-content: center; */
+    /* display: block; */
+    /* align-items: center; */
+    text-align: center;
+    border-radius: 1vmin;
+    
+}
+
+.color{
+    background-color: transparent;
+}
+
+.color:hover{
+    background-color: #FAF1E6;
+    color: black;
+}
+#ques_div_lang{
+    color:rgb(16, 11, 11);
+    padding: 2vmin;
+    border-bottom:2px solid black;
+    text-align: left;
+    background-color: #E07B39;
+}
+
+#option_langu{
+    margin-top: 6vmin;
+}
+.lang_option{
+    height: 6vmin;
+    border: 2px solid black;
+    border-radius: 2vmin;
+    margin: 3vmin;
+    background-color: #118B50;
+}
+#hindi_lan{
+    text-align: center;
+    font-size: 3vmin;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vmin;
+}
+#english_lan{
+    text-align: center;
+    font-size: 3vmin;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vmin;
+}
+
+.box2{
+    height: 20vmin;
+    background-color:#FAF1E6 ;
+}
+
+
+
+
+
+/* footer containt box */
+
+#footer{
+    height: 40vmin;
+    background-color:#2a3439 ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cont_main{
+    display: flex;
+    justify-content:space-evenly;
+    /* align-items: center; */
+    gap: 2vmin;
+}
+
+.footer-section{
+    color: white;
+    padding: 2vmin;
+    font-size: 2vmin;
+    text-align: left;
+}
+
+.cont_box{
+    padding-top: 2vmin;
+    padding-left: 2vmin;
+   
+}
+.footer-section i{
+    color: rgb(207, 13, 13);
+    font-weight: 50;
+    font-size: 2vmin;
+    gap: 2vmin;
+
+}
+.cont_box p{
+    padding: 0.5vmin;
+    font-size: 2vmin;
+    color: white;
+    
+}
+
+.cont_box a{
+    padding: 0.5vmin;
+    font-size: 2.5vmin;
+    color: rgb(50, 50, 209)
+    
+}
+
+
+/* footer comp */
+
+.footer_comp{
+    height: 15vmin;
+    background-color: #FFB22C;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    gap: 2vmin;
+}
+
+.footer-bottom{
+    color: black;
+    font-size: 2vmin;
+    text-align: center;
+    background-color: rgb(251, 237, 237);
+}
+
+
