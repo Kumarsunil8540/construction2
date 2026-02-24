@@ -1,251 +1,439 @@
-<!DOCTYPE html>
-<html lang="hi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SK Construction Company – समस्तीपुर</title>
-    <link rel="stylesheet" href="ind_style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="hindi_about.css">
-</head>
-<body>
-    <div class="header">
-        <div id="head_color">
-            <div id="logodiv">
-                <div class="logo"></div>
-            </div>
-            <div class="name_div">
-                <h1>SK Construction Company</h1>
-                <div class="contact">
-                    <i class="fa-solid fa-phone"></i>
-                    <span>+91-9955604576, +91-9523234108</span>
-                </div>
-            </div>
-            
-            <div class="header_icon">
-                <div class="icon_size">
-                    <a href="https://www.instagram.com/s.k_construction_company" target="_blank"><i class="fa-brands fa-instagram border"></i></a>
-                    <a href="https://www.facebook.com/share/1Xhy9SS1kB/" target="_blank"><i class="fa-brands fa-facebook border"></i></a>
-                    <a href="https://wa.me/qr/ZQEKIEU4V5SMN1" target="_blank"><i class="fa-brands fa-square-whatsapp border"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-    <div class="navoption">
-        <div class="titel_div">
-            <h2>हमारे बारे में</h2>
-        </div>
-        <div class="div_nav">
-            <div class="section1">
-                <a onclick="location.href='index.html'" class="border">🏠 होम</a>
-                <a onclick="location.href='projects.html'" class="border">🖼️ गैलरी / प्रोजेक्ट्स</a>
-                <a onclick="location.href='Services.html'" class="border">🛠️ सेवाएं</a>
-            </div>
-            <div class="section2"></div>
-        </div>
-    </div>
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
-    <div class="cont_box_hind">
-        <!-- टैगलाइन सेक्शन -->
-        <div class="box_cont1">
-            <div class="Tagline">
-                <div class="name">
-                    <h1>SK CONSTRUCTION</h1>
-                    <h1 id="company">COMPANY</h1>
-                </div>
-                <div class="Tag_div">
-                    <p>आपके सपनों का घर, हमारी ज़िम्मेदारी।</p>
-                </div>
-            </div>
-            <div class="tag_photo">
-                <div class="photo_div" style="background-image: url('logo2 copy.png');"></div>
-            </div>
-        </div>
+/* Header Styles */
+.header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
 
-        <!-- कंपनी परिचय -->
-        <div class="coma_intro box_cont1">
-            <div class="Tagline1">
-                <div class="name">
-                    <h1>🏢 कंपनी परिचय</h1>
-                </div>
-                <div class="Tag_div">
-                    <p>हम समस्तीपुर की एक प्रतिष्ठित निर्माण कंपनी हैं।</p>
-                    <p>पिछले <strong>45+ वर्षों</strong> से, हमने दर्जनों घरों, दुकानों और अन्य निर्माण परियोजनाओं को सफलतापूर्वक पूरा किया है।</p>
-                </div>
-            </div>
-            <div class="tag_photo">
-                <div class="photo_div" style="background-image: url('1.png');"></div>
-            </div>
-        </div>
+#head_color {
+    background: linear-gradient(135deg, #FFB22C, #ff9f1a);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+}
 
-        <!-- दृष्टिकोण और उद्देश्य -->
-        <div class="visson_miss box_cont1">
-            <div class="Tagline1">
-                <div class="name">
-                    <h1>🎯 दृष्टिकोण और उद्देश्य</h1>
-                </div>
-                <div class="Tag_div">
-                    <p>हमारा उद्देश्य है कि हर परिवार को एक <strong>मजबूत, सुंदर और बजट-अनुकूल</strong> घर उपलब्ध कराना।</p>
-                    <p>हम <strong>समय पर डिलीवरी</strong> और <strong>पारदर्शी सेवा</strong> में विश्वास रखते हैं।</p>
-                </div>
-            </div>
-            <div class="tag_photo">
-                <div class="photo_div" style="background-image: url('vison_photo.png');"></div>
-            </div>
-        </div>
-        
-        <!-- अनुभव और विशेषता -->
-        <div class="expri_expr box_cont1">
-            <div class="Tagline1">
-                <div class="name">
-                    <h1>⭐ अनुभव और विशेषता</h1>
-                </div>
-                <div class="Tag_div">
-                    <p>✅ <strong>45+ वर्षों</strong> का अनुभव</p>
-                    <p>✅ <strong>10000+</strong> सफल प्रोजेक्ट</p>
-                    <p>✅ RCC ढांचा, प्लास्टरिंग, पेंटिंग, टाइल्स और नक़्शा डिजाइनिंग में विशेषज्ञता</p>
-                </div>
-            </div>
-            <div class="tag_photo">
-                <div class="photo_div" style="background-image: url('photo_45+.png');"></div>
-            </div>
-        </div>
+#logodiv {
+    flex: 0 0 auto;
+}
 
-        <!-- हमें क्यों चुनें -->
-        <div class="choose box_cont1">
-            <div class="Tagline1">
-                <div class="name">
-                    <h1>🤔 हमें क्यों चुनें?</h1>
-                </div>
-                <div class="Tag_div">
-                    <p>✅ अनुभवी कारीगरों की टीम</p>
-                    <p>✅ समय पर कार्य पूर्ण</p>
-                    <p>✅ किफायती योजना</p>
-                    <p>✅ नक़्शा और Instagram वीडियो के साथ बेहतर समझ</p>
-                </div>
-            </div>
-            <div class="tag_photo">
-                <div class="photo_div" style="background-image: url('businessman-discussing-blueprint-with-architects.jpg');"></div>
-            </div>
-        </div>
+.logo {
+    width: 65px;
+    height: 65px;
+    background-image: url("1-removebg-preview.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    transition: transform 0.3s;
+}
 
-        <!-- टीम का उल्लेख -->
-        <div class="team_mens box_cont1">
-            <div class="Tagline1">
-                <div class="name">
-                    <h1>👥 हमारी टीम</h1>
-                </div>
-                <div class="Tag_div">
-                    <p>हमारी टीम में <strong>राजमिस्त्री, पेंटर, प्लंबर, इलेक्ट्रिशियन और सुपरवाइजर</strong> शामिल हैं, जो सभी अनुभवी हैं।</p>
-                </div>
-            </div>
-            <div class="tag_photo">
-                <div class="photo_div" style="background-image: url('photo3.png');"></div>
-            </div>
-        </div>
+.logo:hover {
+    transform: scale(1.05);
+}
 
-        <!-- हमारा वादा -->
-        <div class="promiss box_cont1">
-            <div class="Tagline1">
-                <div class="name">
-                    <h1>🤝 हमारा वादा</h1>
-                </div>
-                <div class="Tag_div">
-                    <p><strong>"आपका सपना, हमारा संकल्प"</strong> - SK Construction Company का एक ही उद्देश्य है।</p>
-                </div>
-            </div>
-            <div class="tag_photo">
-                <div class="photo_div" style="background-image: url('photo2.png');"></div>
-            </div>
-        </div>
+.name_div {
+    flex: 1;
+    padding: 0 15px;
+}
 
-        <!-- WhatsApp चैट -->
-        <div class="contact_now box_cont1">
-            <div class="Tagline1">
-                <div class="name">
-                    <h1>📱 अभी चैट करें</h1>
-                </div>
-                <div class="Tag_div">
-                    <a href="https://wa.me/qr/ZQEKIEU4V5SMN1" target="_blank" style="display: inline-block; background: #25D366; color: white; padding: 12px 25px; text-decoration: none; border-radius: 50px; font-weight: bold; margin-top: 10px;">
-                        <i class="fa-brands fa-whatsapp"></i> WhatsApp पर चैट करें
-                    </a>
-                </div>
-            </div>
-            <div class="tag_photo">
-                <div class="photo_div" style="background-image: url('whatsapp_photo.jpg');"></div>
-            </div>
-        </div>
-    </div>
+.name_div h1 {
+    font-size: clamp(1.3rem, 4vw, 2rem);
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 5px;
+    letter-spacing: -0.5px;
+}
 
-    <!-- फुटर सेक्शन -->
-    <div id="footer">
-        <div class="cont_main">
-            <div class="footer-section">
-                <h2>कंपनी जानकारी</h2>
-                <div class="cont_box">
-                    <p><i class="fa-solid fa-circle-dot"></i> कंपनी: SK Construction Company</p>
-                    <p><i class="fa-solid fa-circle-dot"></i> मोबाइल: +91-9955604576, +91-9523234108</p>
-                    <p><i class="fa-solid fa-circle-dot"></i> ईमेल: kumarsunil854098@gmail.com</p>
-                    <p><i class="fa-solid fa-circle-dot"></i> पता: समस्तीपुर, बिहार</p>
-                    <a href="https://wa.me/qr/ZQEKIEU4V5SMN1" target="_blank"><i class="fa-solid fa-circle-dot"></i> WhatsApp डायरेक्ट लिंक</a>
-                </div>
-            </div>
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    font-weight: 600;
+    color: #333;
+    background: rgba(255,255,255,0.2);
+    padding: 6px 15px;
+    border-radius: 50px;
+    backdrop-filter: blur(5px);
+    width: fit-content;
+}
 
-            <div class="footer-section"> 
-                <h2>हमारी सेवाएं</h2>
-                <div class="cont_box">
-                    <p><i class="fa-solid fa-circle-dot"></i> 🧱 भवन निर्माण</p>
-                    <p><i class="fa-solid fa-circle-dot"></i> 🖌️ पेंटिंग</p>
-                    <p><i class="fa-solid fa-circle-dot"></i> 🧑‍🔧 प्लास्टरिंग</p>
-                    <p><i class="fa-solid fa-circle-dot"></i> 🪚 इंटीरियर वर्क</p>
-                    <p><i class="fa-solid fa-circle-dot"></i> 🔨 नवीनीकरण</p>
-                </div>
-            </div>
+.contact i {
+    color: #25D366;
+    animation: ring 2s infinite;
+}
 
-            <div class="footer-section">
-                <h2>वेबसाइट पेज</h2> 
-                <div class="cont_box">
-                    <a onclick="location.href='index.html'"><i class="fa-solid fa-circle-dot"></i> 🏠 होम</a><br>
-                    <a onclick="location.href='Services.html'"><i class="fa-solid fa-circle-dot"></i> 🛠️ सेवाएं</a><br>
-                    <a onclick="location.href='projects.html'"><i class="fa-solid fa-circle-dot"></i> 🖼️ गैलरी / प्रोजेक्ट्स</a><br>
-                    <a href="https://wa.me/qr/ZQEKIEU4V5SMN1" target="_blank"><i class="fa-solid fa-circle-dot"></i> 📞 संपर्क</a><br>
-                    <a onclick="location.href='hindi_about.html'"><i class="fa-solid fa-circle-dot"></i> ℹ️ हमारे बारे में</a><br>
-                </div> 
-            </div>
+@keyframes ring {
+    0%, 100% { transform: rotate(0); }
+    10%, 30%, 50%, 70%, 90% { transform: rotate(10deg); }
+    20%, 40%, 60%, 80% { transform: rotate(-10deg); }
+}
 
-            <div class="footer-section"> 
-                <h2>सोशल मीडिया</h2>
-                <div class="cont_box">
-                    <a href="https://wa.me/qr/ZQEKIEU4V5SMN1" target="_blank"><i class="fa-solid fa-circle-dot"></i> 📱 WhatsApp</a><br>
-                    <a href="https://www.instagram.com/s.k_construction_company" target="_blank"><i class="fa-solid fa-circle-dot"></i> 📷 Instagram</a><br>
-                    <a href="https://www.facebook.com/share/1Xhy9SS1kB/" target="_blank"><i class="fa-solid fa-circle-dot"></i> 📘 Facebook</a><br>
-                    <a href="https://g.co/kgs/Kiasq8F" target="_blank"><i class="fa-solid fa-circle-dot"></i> 🌐 वेबसाइट</a><br>
-                </div> 
-            </div>
-        </div>
-    </div>
+.header_icon {
+    flex: 0 0 auto;
+}
 
-    <!-- कंपनी लोगो और कॉपीराइट -->
-    <div class="footer_comp">
-        <div class="logo"></div>
-        <h1>SK Construction Company</h1>
-    </div>
-    
-    <div class="footer-bottom">
-        <p>© 2024 SK Construction Company. सर्वाधिकार सुरक्षित।</p>
-    </div>
+.icon_size {
+    display: flex;
+    gap: 12px;
+}
 
-    <!-- जावास्क्रिप्ट नेविगेशन के लिए -->
-    <script>
-        // सुनिश्चित करें कि सभी नेविगेशन लिंक सही से काम करें
-        document.querySelectorAll('[onclick*="location.href"]').forEach(element => {
-            element.addEventListener('click', function(e) {
-                e.preventDefault();
-                const href = this.getAttribute('onclick').match(/'([^']+)'/)[1];
-                location.href = href;
-            });
-        });
-    </script>
-</body>
-</html>
+.icon_size a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.icon_size i {
+    font-size: 1.4rem;
+    color: #FFB22C;
+}
+
+.icon_size a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Main Content */
+#photo {
+    min-height: 90vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#containt_part {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#box1 {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    padding: 30px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    border: 1px solid rgba(255,255,255,0.3);
+    animation: slideUp 0.6s ease;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#ques_div_lang {
+    background: linear-gradient(135deg, #FFB22C, #ff9f1a);
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#ques_div_lang h2 {
+    color: white;
+    font-size: clamp(1.2rem, 4vw, 1.6rem);
+    line-height: 1.5;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+#option_langu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.lang_option {
+    width: 100%;
+    max-width: 350px;
+    padding: 18px 25px;
+    border-radius: 60px;
+    font-size: clamp(1.3rem, 5vw, 1.8rem);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border: none;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+#hindi_lan {
+    background: linear-gradient(135deg, #FF9933, #FF6B6B);
+    color: white;
+}
+
+#english_lan {
+    background: linear-gradient(135deg, #138808, #4CAF50);
+    color: white;
+}
+
+.lang_option:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.lang_option:active {
+    transform: scale(0.98);
+}
+
+.lang_option i {
+    font-size: 1.5rem;
+    animation: pointer 1s infinite;
+}
+
+@keyframes pointer {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(5px); }
+}
+
+.box2 {
+    height: 100px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Footer */
+#footer {
+    background: #1a1a2e;
+    padding: 50px 20px 30px;
+}
+
+.cont_main {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.footer-section h2 {
+    color: #FFB22C;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: #FFB22C;
+    border-radius: 3px;
+}
+
+.cont_box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.cont_box p, .cont_box a {
+    color: #b8b8b8;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.95rem;
+    transition: all 0.3s;
+    line-height: 1.5;
+}
+
+.cont_box a {
+    color: #FFB22C;
+    cursor: pointer;
+}
+
+.cont_box p:hover, .cont_box a:hover {
+    color: white;
+    transform: translateX(5px);
+}
+
+.cont_box i {
+    color: #FFB22C;
+    width: 20px;
+    font-size: 1rem;
+}
+
+.whatsapp-link {
+    background: #25D366;
+    color: white !important;
+    padding: 8px 15px;
+    border-radius: 50px;
+    width: fit-content;
+    margin-top: 5px;
+}
+
+.whatsapp-link:hover {
+    background: #128C7E;
+    transform: translateX(0) !important;
+}
+
+.social-box a {
+    padding: 5px 0;
+}
+
+/* Footer Company */
+.footer_comp {
+    background: #FFB22C;
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer_comp .logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid white;
+    background-color: #1a1a2e;
+}
+
+.footer_comp h1 {
+    color: white;
+    font-size: clamp(1.2rem, 4vw, 1.8rem);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.footer-bottom {
+    background: #0f0f1f;
+    padding: 20px;
+    text-align: center;
+    color: #6c6c8a;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+/* Tablet Responsive */
+@media screen and (max-width: 768px) {
+    #head_color {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .name_div {
+        text-align: center;
+    }
+
+    .contact {
+        margin: 0 auto;
+    }
+
+    .icon_size {
+        justify-content: center;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .footer-section h2::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .cont_box p, .cont_box a {
+        justify-content: center;
+    }
+
+    .whatsapp-link {
+        margin: 0 auto;
+    }
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 480px) {
+    .logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    .name_div h1 {
+        font-size: 1.3rem;
+    }
+
+    .contact {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+
+    .icon_size a {
+        width: 40px;
+        height: 40px;
+    }
+
+    .icon_size i {
+        font-size: 1.2rem;
+    }
+
+    #box1 {
+        padding: 20px;
+    }
+
+    #ques_div_lang {
+        padding: 20px;
+    }
+
+    .lang_option {
+        padding: 15px 20px;
+        font-size: 1.3rem;
+    }
+
+    .footer_comp {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* Touch Optimizations */
+html {
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+}
+
+.lang_option, 
+.cont_box a,
+.social-icon {
+    min-height: 44px;
+    min-width: 44px;
+}
