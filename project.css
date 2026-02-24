@@ -1,48 +1,372 @@
-.proj_conainer{
-    width: 99.8%;
-    height: 200vmin;
-    border: 2px solid black;
-    background-color: #F2F2F2;
+/* Gallery/Projects Page CSS */
+
+.proj_conainer {
+    width: 100%;
+    min-height: 200vmin;
+    background: linear-gradient(135deg, #f6f9fc 0%, #e6f0f5 100%);
+    padding: 20px 10px;
 }
 
-.pro_detai_photo{
-    height: 45vmin;
-    background-color: #F2F2F2;
-    width:100%;
-    box-shadow: 1px 1px 1px black;
+/* Gallery Header */
+.gallery-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 0 0 50px 50px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.gallery-header h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    font-weight: 700;
+}
+
+.gallery-header p {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    max-width: 800px;
+    margin: 0 auto 30px;
+    opacity: 0.95;
+    line-height: 1.6;
+}
+
+.header-stats {
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.stat-item {
+    display: flex;
     align-items: center;
+    gap: 10px;
+    background: rgba(255,255,255,0.2);
+    padding: 10px 20px;
+    border-radius: 50px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,0.3);
 }
 
-.proj_box1{
-    height: 40vmin;
-    background-color: white;
-    width:45vmin;
-    border:2px solid black;
-    border-radius: 10px;
-    box-shadow:1px black;
-}
-.proj_photo{
-    height: 30vmin;
-    width: 45vmin;
-    background-color: yellow;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom:2px solid black ;
-}
-.phot_proj{
-    height: 30vmin;
-    width: 45vmin;
-    background-color: yellow;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom:2px solid black ;
-    background-size: cover;
+.stat-item i {
+    font-size: 1.3rem;
+    color: #FFD700;
 }
 
-.p1{
+.stat-item span {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.pro_detai_photo {
+    min-height: 45vmin;
+    background: transparent;
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
-    padding: 1vmin;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+}
+
+.proj_box1 {
+    height: auto;
+    min-height: 40vmin;
+    width: min(45vmin, 300px);
+    background: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    overflow: hidden;
+    position: relative;
+}
+
+.proj_box1:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.proj_photo {
+    height: 30vmin;
+    width: 100%;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom: 3px solid #FFB22C;
+    position: relative;
+    overflow: hidden;
+}
+
+.phot_proj {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+    position: relative;
+}
+
+.proj_box1:hover .phot_proj {
+    transform: scale(1.1);
+}
+
+.photo-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.proj_box1:hover .photo-overlay {
+    opacity: 1;
+}
+
+.photo-overlay span {
+    color: white;
+    background: #FFB22C;
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+.proj_box1:hover .photo-overlay span {
+    transform: translateY(0);
+}
+
+.proj_photo_exp {
+    padding: 15px;
+    background: white;
+}
+
+.p1 {
+    display: flex;
+    justify-content: space-around;
+    padding: 8px 5px;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.p1 h4 {
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: #f8f9fa;
+    padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.p1 i {
+    color: #FFB22C;
+    font-size: 0.9rem;
+}
+
+/* Call to Action Section */
+.cta-section {
+    background: linear-gradient(135deg, #FFB22C, #ff9f1a);
+    padding: 60px 20px;
+    text-align: center;
+    margin: 40px 0;
+    border-radius: 50px 50px 0 0;
+}
+
+.cta-section h2 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    color: white;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.cta-section p {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    color: white;
+    margin-bottom: 25px;
+    opacity: 0.95;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #25D366;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 60px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    border: 2px solid transparent;
+}
+
+.cta-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    background: #128C7E;
+    border-color: white;
+}
+
+.cta-button i {
+    font-size: 1.5rem;
+    animation: whatsappPulse 2s infinite;
+}
+
+@keyframes whatsappPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+    .proj_box1 {
+        width: min(40vmin, 280px);
+    }
+    
+    .proj_photo {
+        height: 28vmin;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .pro_detai_photo {
+        gap: 15px;
+    }
+    
+    .proj_box1 {
+        width: min(45vmin, 260px);
+    }
+    
+    .proj_photo {
+        height: 30vmin;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .pro_detai_photo {
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    .proj_box1 {
+        width: 90%;
+        max-width: 350px;
+    }
+    
+    .proj_photo {
+        height: 35vmin;
+    }
+    
+    .header-stats {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .stat-item {
+        width: 80%;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .gallery-header {
+        padding: 30px 15px;
+        border-radius: 0 0 30px 30px;
+    }
+    
+    .gallery-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .proj_box1 {
+        width: 95%;
+    }
+    
+    .proj_photo {
+        height: 40vmin;
+    }
+    
+    .p1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .p1 h4 {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .cta-section {
+        padding: 40px 15px;
+    }
+    
+    .cta-button {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+}
+
+/* Touch-friendly improvements */
+.proj_box1 {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.proj_box1:active {
+    transform: scale(0.98);
+}
+
+/* Loading animation for images */
+@keyframes imageLoad {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.phot_proj {
+    animation: imageLoad 0.5s ease;
+}
+
+/* Scroll to top button */
+.scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #FFB22C;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.scroll-top:hover {
+    background: #667eea;
+    transform: translateY(-5px);
 }
