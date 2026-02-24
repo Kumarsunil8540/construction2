@@ -1,169 +1,363 @@
+/* ===== रीसेट और बेस स्टाइल ===== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', 'Segoe UI', Roboto, sans-serif;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
 }
 
-/* About Header */
-.about-header {
-    background: linear-gradient(135deg, #FFB22C, #FF8C00);
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-    border-radius: 0 0 50px 50px;
-    margin-bottom: 30px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.about-header h1 {
-    font-size: 2.2rem;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+/* ===== हेडर स्टाइल ===== */
+.header {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.3);
 }
 
-.about-header p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    opacity: 0.95;
-}
-
-.header-badges {
+.header-flex {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 15px;
 }
 
-.badge {
-    background: rgba(255,255,255,0.2);
-    padding: 8px 20px;
-    border-radius: 50px;
-    font-size: 0.95rem;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    backdrop-filter: blur(5px);
-    border: 1px solid rgba(255,255,255,0.3);
+.logo-box {
+    flex-shrink: 0;
 }
 
-.badge i {
-    color: #FFD700;
-}
-
-/* Main Content Container */
-.cont_box_hind {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
-/* Box Styles */
-.box_cont1 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    background: white;
-    border-radius: 30px;
-    padding: 30px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-    border: 1px solid #eee;
+.logo {
+    width: 65px;
+    height: 65px;
+    background: linear-gradient(135deg, #FFB22C, #FF8C00);
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(255, 178, 44, 0.4);
     position: relative;
     overflow: hidden;
-    transition: all 0.3s ease;
 }
 
-.box_cont1:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(255, 178, 44, 0.1);
+.logo::before {
+    content: '🏗️';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.2rem;
 }
 
-.box_cont1::before {
+.company-info h1 {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.contact-badge {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    padding: 6px 15px;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.contact-badge i {
+    color: #25D366;
+    font-size: 1.1rem;
+    animation: ring 2s infinite;
+}
+
+.contact-badge span {
+    color: #FFB22C;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+@keyframes ring {
+    0%, 100% { transform: rotate(0); }
+    10%, 30%, 50%, 70%, 90% { transform: rotate(15deg); }
+    20%, 40%, 60%, 80% { transform: rotate(-15deg); }
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-link {
+    width: 45px;
+    height: 45px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.social-link:hover {
+    transform: translateY(-8px) scale(1.1);
+    background: #FFB22C;
+    box-shadow: 0 10px 25px rgba(255, 178, 44, 0.4);
+}
+
+.whatsapp:hover {
+    background: #25D366 !important;
+}
+
+/* ===== नेविगेशन बार ===== */
+.navbar {
+    background: white;
+    padding: 10px 0;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 95px;
+    z-index: 999;
+}
+
+.nav-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.page-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 8px 20px;
+    border-radius: 50px;
+    color: white;
+}
+
+.page-title i {
+    font-size: 1.2rem;
+}
+
+.page-title h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-weight: 600;
+    color: #333;
+    transition: all 0.3s;
+    border: 2px solid transparent;
+}
+
+.nav-link:hover {
+    background: #667eea;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* ===== हीरो सेक्शन ===== */
+.hero-section {
+    padding: 50px 0;
+}
+
+.hero-section .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.hero-badge {
+    background: #FFB22C;
+    color: white;
+    padding: 8px 25px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(255, 178, 44, 0.4);
+}
+
+.hero-title {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    color: #1a1a2e;
+}
+
+.hero-title span {
+    color: #FFB22C;
+    display: block;
+    font-size: 2.5rem;
+}
+
+.hero-tagline {
+    font-size: 1.3rem;
+    color: #555;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.hero-stats {
+    display: flex;
+    gap: 30px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #667eea;
+}
+
+.stat-label {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.hero-img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 30px;
+    box-shadow: 0 30px 50px rgba(0,0,0,0.2);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+/* ===== अबाउट कार्ड्स ===== */
+.about-cards {
+    padding: 50px 0;
+}
+
+.about-card {
+    background: white;
+    border-radius: 40px;
+    padding: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 25px;
+    align-items: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+
+.about-card:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 35px 60px rgba(0,0,0,0.2);
+}
+
+.about-card::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 5px;
     height: 100%;
-    background: #FFB22C;
+    background: linear-gradient(135deg, #FFB22C, #FF8C00);
 }
 
-.content-wrapper {
-    flex: 1;
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-}
-
-.icon-circle {
-    width: 60px;
-    height: 60px;
-    background: #FFB22C;
-    border-radius: 50%;
+.card-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
 }
 
-.icon-circle i {
-    font-size: 1.8rem;
+.card-icon i {
+    font-size: 2rem;
     color: white;
 }
 
-/* Tagline Styles */
-.Tagline, .Tagline1 {
+.card-content {
     flex: 1;
 }
 
-.name {
-    margin-bottom: 15px;
-}
-
-.name h1 {
+.card-content h3 {
     font-size: 1.8rem;
-    color: #333;
-    display: inline-block;
+    margin-bottom: 15px;
+    color: #1a1a2e;
 }
 
-#company {
-    color: #FFB22C;
-    margin-left: 5px;
-}
-
-.Tag_div p {
+.card-content p {
+    color: #555;
+    line-height: 1.8;
     font-size: 1rem;
-    line-height: 1.6;
-    color: #666;
-    margin-bottom: 10px;
 }
 
-.tagline-badge {
-    margin-top: 15px;
+.card-image {
+    flex-shrink: 0;
 }
 
-.tagline-badge span {
-    background: #FFB22C;
-    color: white;
-    padding: 5px 15px;
-    border-radius: 50px;
-    font-size: 0.9rem;
-    display: inline-block;
+.card-image img {
+    width: 200px;
+    height: 150px;
+    border-radius: 25px;
+    object-fit: cover;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    border: 3px solid white;
+    transition: transform 0.5s;
 }
 
-/* Feature List */
-.feature-list p {
+.about-card:hover .card-image img {
+    transform: scale(1.1);
+}
+
+/* फीचर लिस्ट */
+.feature-list {
+    list-style: none;
+}
+
+.feature-list li {
+    margin-bottom: 12px;
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 10px;
 }
 
 .feature-list i {
@@ -171,345 +365,346 @@ a {
     font-size: 1.2rem;
 }
 
-.feature-grid {
+/* व्हाय अस ग्रिड */
+.why-us-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    margin-top: 15px;
 }
 
-.feature-tag {
-    background: #f8f9fa;
-    padding: 8px 15px;
+.why-tag {
+    background: #f0f0f0;
+    padding: 8px 12px;
     border-radius: 50px;
     font-size: 0.9rem;
     display: flex;
     align-items: center;
-    gap: 8px;
-    border: 1px solid #eee;
+    gap: 6px;
 }
 
-.feature-tag i {
+.why-tag i {
     color: #FFB22C;
 }
 
-/* Photo Styles */
-.tag_photo {
-    flex: 0 0 280px;
-    height: 220px;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    border: 3px solid white;
-    margin-left: 20px;
-}
-
-.photo_div {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    transition: transform 0.5s ease;
-}
-
-.tag_photo:hover .photo_div {
-    transform: scale(1.1);
-}
-
-/* Special section backgrounds */
-.coma_intro {
-    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-}
-
-.visson_miss {
-    background: linear-gradient(135deg, #f3e5f5, #e1bee7);
-}
-
-.expri_expr {
-    background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
-}
-
-.choose {
-    background: linear-gradient(135deg, #fff3e0, #ffe0b2);
-}
-
-.team_mens {
-    background: linear-gradient(135deg, #e0f2f1, #b2dfdb);
-}
-
-.promiss {
-    background: linear-gradient(135deg, #fce4ec, #f8bbd0);
-}
-
-.contact_now {
-    background: linear-gradient(135deg, #e0e0e0, #d5d5d5);
-}
-
-/* WhatsApp Button */
-.whatsapp-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    background: #25D366;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 50px;
-    font-weight: bold;
-    margin: 15px 0 10px;
-    transition: all 0.3s;
-    border: 2px solid transparent;
-}
-
-.whatsapp-btn:hover {
-    background: #128C7E;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 20px rgba(37, 211, 102, 0.3);
-}
-
-.phone-number {
-    color: #555;
-    font-size: 0.95rem;
-}
-
+/* प्रॉमिस टेक्स्ट */
 .promise-text {
-    font-size: 1.3rem !important;
+    font-size: 1.5rem !important;
     color: #FFB22C !important;
+    font-weight: 700;
     margin-bottom: 5px !important;
 }
 
-/* Footer Styles - Updated */
-#footer {
+/* कार्ड कलर्स */
+.card-1 { background: linear-gradient(135deg, #fff5f5, #ffe0e0); }
+.card-2 { background: linear-gradient(135deg, #f0f4ff, #e0e9ff); }
+.card-3 { background: linear-gradient(135deg, #f0fff4, #e0ffe8); }
+.card-4 { background: linear-gradient(135deg, #fff9f0, #fff0e0); }
+.card-5 { background: linear-gradient(135deg, #f0f0ff, #e0e0ff); }
+.card-6 { background: linear-gradient(135deg, #fff0f5, #ffe0f0); }
+
+/* ===== व्हाट्सएप सीटीए ===== */
+.whatsapp-cta {
+    padding: 50px 0;
+}
+
+.cta-box {
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    border-radius: 60px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 30px;
+    align-items: center;
+    color: white;
+    box-shadow: 0 30px 50px rgba(37, 211, 102, 0.3);
+}
+
+.cta-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-icon i {
+    font-size: 3rem;
+    color: white;
+}
+
+.cta-content h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.cta-content p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    opacity: 0.95;
+}
+
+.cta-button {
+    background: white;
+    color: #128C7E;
+    padding: 15px 35px;
+    border-radius: 60px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.4s;
+    border: 2px solid transparent;
+}
+
+.cta-button:hover {
+    background: transparent;
+    color: white;
+    border-color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.cta-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 40px;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* ===== फुटर ===== */
+.footer {
     background: #1a1a2e;
     color: white;
-    padding: 50px 20px 30px;
+    padding: 60px 0 0;
     margin-top: 50px;
 }
 
-.cont_main {
-    max-width: 1200px;
-    margin: 0 auto;
+.footer-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
+    margin-bottom: 40px;
 }
 
-.footer-section h2 {
+.footer-col h4 {
     color: #FFB22C;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 20px;
-    padding-bottom: 8px;
-    border-bottom: 2px solid #FFB22C;
-    display: inline-block;
+    position: relative;
+    padding-bottom: 10px;
 }
 
-.cont_box p, .cont_box a {
-    color: #b8b8b8;
+.footer-col h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: #FFB22C;
+    border-radius: 3px;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 0.9rem;
-    margin-bottom: 12px;
+    color: #b8b8b8;
     transition: all 0.3s;
 }
 
-.cont_box a {
-    color: #FFB22C;
-    cursor: pointer;
-}
-
-.cont_box p:hover, .cont_box a:hover {
+.footer-col ul li:hover {
     color: white;
     transform: translateX(5px);
 }
 
-.cont_box i {
+.footer-col ul li i {
     color: #FFB22C;
     width: 20px;
 }
 
-.whatsapp-link {
-    background: #25D366;
-    color: white !important;
-    padding: 8px 15px;
-    border-radius: 50px;
-    width: fit-content;
+.footer-col a {
+    color: #b8b8b8;
+    text-decoration: none;
+    transition: all 0.3s;
 }
 
-.whatsapp-link:hover {
-    background: #128C7E;
-    transform: translateX(0) !important;
-}
-
-/* Footer Company */
-.footer_comp {
-    background: #FFB22C;
-    padding: 30px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-.footer_comp .logo {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: 2px solid white;
-}
-
-.footer_comp h1 {
-    color: white;
-    font-size: 1.5rem;
+.footer-col a:hover {
+    color: #FFB22C;
 }
 
 .footer-bottom {
     background: #0f0f1f;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
     color: #6c6c8a;
-    font-size: 0.9rem;
 }
 
-/* Responsive Design */
+/* ===== रिस्पॉन्सिव डिजाइन ===== */
 @media screen and (max-width: 992px) {
-    .box_cont1 {
-        padding: 25px;
-    }
-    
-    .tag_photo {
-        flex: 0 0 240px;
-        height: 200px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .about-header h1 {
-        font-size: 1.8rem;
-    }
-    
-    .about-header p {
-        font-size: 1rem;
-    }
-    
-    .box_cont1 {
-        flex-direction: column;
+    .hero-section .container {
+        grid-template-columns: 1fr;
         text-align: center;
     }
     
-    .content-wrapper {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        width: 100%;
+    .hero-stats {
+        justify-content: center;
     }
     
-    .tag_photo {
-        width: 100%;
+    .hero-img {
         max-width: 400px;
-        margin: 20px 0 0;
+        margin: 0 auto;
     }
     
-    .name h1 {
-        font-size: 1.5rem;
-    }
-    
-    .feature-grid {
-        justify-content: center;
-    }
-    
-    .footer-section {
+    .about-card {
+        grid-template-columns: 1fr;
         text-align: center;
     }
     
-    .footer-section h2 {
-        border-bottom: none;
+    .card-icon {
+        margin: 0 auto;
     }
     
-    .cont_box p, .cont_box a {
-        justify-content: center;
+    .card-image img {
+        margin: 0 auto;
     }
     
-    .whatsapp-link {
+    .cta-box {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .cta-icon {
+        margin: 0 auto;
+    }
+    
+    .cta-image img {
         margin: 0 auto;
     }
 }
 
+@media screen and (max-width: 768px) {
+    .header-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .nav-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-title span {
+        font-size: 2rem;
+    }
+    
+    .hero-stats {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .why-us-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .footer-col h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .footer-col ul li {
+        justify-content: center;
+    }
+}
+
 @media screen and (max-width: 480px) {
-    .about-header {
-        padding: 30px 15px;
-        border-radius: 0 0 30px 30px;
+    .logo {
+        width: 55px;
+        height: 55px;
     }
     
-    .about-header h1 {
-        font-size: 1.5rem;
-    }
-    
-    .badge {
-        font-size: 0.8rem;
-        padding: 5px 12px;
-    }
-    
-    .box_cont1 {
-        padding: 20px;
-    }
-    
-    .icon-circle {
-        width: 50px;
-        height: 50px;
-    }
-    
-    .icon-circle i {
-        font-size: 1.5rem;
-    }
-    
-    .name h1 {
+    .company-info h1 {
         font-size: 1.3rem;
     }
     
-    .tag_photo {
-        height: 180px;
+    .contact-badge {
+        font-size: 0.8rem;
+        padding: 5px 10px;
     }
     
-    .whatsapp-btn {
-        padding: 10px 20px;
+    .social-link {
+        width: 38px;
+        height: 38px;
+        font-size: 1.1rem;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-title span {
+        font-size: 1.6rem;
+    }
+    
+    .hero-tagline {
+        font-size: 1.1rem;
+    }
+    
+    .stat-number {
+        font-size: 1.5rem;
+    }
+    
+    .about-card {
+        padding: 20px;
+    }
+    
+    .card-content h3 {
+        font-size: 1.4rem;
+    }
+    
+    .card-image img {
+        width: 150px;
+        height: 120px;
+    }
+    
+    .cta-box {
+        padding: 25px;
+    }
+    
+    .cta-content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .cta-button {
+        padding: 12px 25px;
         font-size: 0.9rem;
     }
-    
-    .footer_comp {
-        flex-direction: column;
-        gap: 10px;
-    }
-    
-    .footer_comp h1 {
-        font-size: 1.2rem;
-    }
 }
 
-/* Touch Optimizations */
-html {
-    -webkit-tap-highlight-color: transparent;
-    scroll-behavior: smooth;
-}
-
-.box_cont1,
-.whatsapp-btn,
-.cont_box a,
-.badge {
-    cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-}
-
-.box_cont1:active {
-    transform: scale(0.98);
-}
-
-/* Animations */
-@keyframes fadeIn {
+/* ===== एनिमेशन ===== */
+@keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(40px);
     }
     to {
         opacity: 1;
@@ -517,24 +712,32 @@ html {
     }
 }
 
-.box_cont1 {
-    animation: fadeIn 0.5s ease forwards;
+.about-card {
+    animation: fadeInUp 0.6s ease forwards;
 }
 
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-    width: 8px;
+.about-card:nth-child(2) { animation-delay: 0.2s; }
+.about-card:nth-child(3) { animation-delay: 0.3s; }
+.about-card:nth-child(4) { animation-delay: 0.4s; }
+.about-card:nth-child(5) { animation-delay: 0.5s; }
+.about-card:nth-child(6) { animation-delay: 0.6s; }
+
+/* ===== टच ऑप्टिमाइजेशन ===== */
+html {
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
+.social-link,
+.nav-link,
+.cta-button {
+    min-height: 44px;
+    min-width: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
-::-webkit-scrollbar-thumb {
-    background: #FFB22C;
-    border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #FF8C00;
+.about-card:active {
+    transform: scale(0.98);
 }
