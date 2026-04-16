@@ -3,11 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-    <title>SK Construction Company – Samastipur | आपके सपनों का घर</title>
+    <title>SK Construction Company – Samastipur | आपके सपनों का घर | Best Construction in Samastipur</title>
     <link rel="stylesheet" href="ind_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="1-removebg-preview.png" type="image/x-icon">
 </head>
 <body>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/qr/ZQEKIEU4V5SMN1" target="_blank" class="whatsapp-float" id="whatsappFloat">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="tooltip">Need Help? Chat with us!</span>
+    </a>
+
+    <!-- Call Floating Button -->
+    <a href="tel:+919955604576" class="call-float" id="callFloat">
+        <i class="fa-solid fa-phone"></i>
+        <span class="tooltip">Call Now!</span>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
     <!-- Header Section -->
     <div class="header">
         <div id="head_color">
@@ -15,7 +35,7 @@
                 <div class="logo"></div>
             </div>
             <div class="name_div">
-                <h1>SK Construction Company</h1>
+                <h1>SK <span>Construction</span> Company</h1>
                 <div class="contact">
                     <i class="fa-solid fa-phone"></i>
                     <span>+91-9955604576 | +91-9523234108</span>
@@ -34,22 +54,23 @@
 
     <!-- Hero Section with Language Selection -->
     <div id="photo">
+        <div class="hero-overlay"></div>
         <div id="containt_part">
             <div id="box1" class="color">
                 <div class="welcome-badge">
-                    <span class="badge-pill">🏗️ स्वागत है | Welcome</span>
+                    <span class="badge-pill">🏗️ स्वागत है | Welcome to SK Construction</span>
                 </div>
                 <div id="ques_div_lang">
                     <h2>कृपया आगे बढ़ने के लिए अपनी भाषा चुनें</h2>
                     <p class="sub-text">Please select your preferred language to continue</p>
                 </div>
                 <div id="option_langu">
-                    <div id="hindi_lan" class="lang_option" onclick="location.href='hindi_about.html'">
+                    <div id="hindi_lan" class="lang_option" data-lang="hindi">
                         <i class="fa-solid fa-language"></i>
                         हिन्दी 
                         <i class="fa-solid fa-hand-pointer"></i>  
                     </div>
-                    <div id="english_lan" class="lang_option" onclick="location.href='english_about.html'">
+                    <div id="english_lan" class="lang_option" data-lang="english">
                         <i class="fa-solid fa-language"></i>
                         English
                         <i class="fa-solid fa-hand-pointer"></i>
@@ -65,7 +86,11 @@
     </div>
 
     <!-- Features Section -->
-    <div class="features-section">
+    <div class="features-section reveal">
+        <div class="section-header">
+            <h2>Why Choose <span>SK Construction</span>?</h2>
+            <p>हमारे साथ क्यों जुड़ें? | Why Choose Us?</p>
+        </div>
         <div class="features-container">
             <div class="feature-box">
                 <div class="feature-icon">
@@ -73,6 +98,7 @@
                 </div>
                 <h3>45+ Years Experience</h3>
                 <p>समस्तीपुर में निर्माण का विश्वसनीय अनुभव</p>
+                <div class="feature-hover"></div>
             </div>
             <div class="feature-box">
                 <div class="feature-icon">
@@ -80,6 +106,7 @@
                 </div>
                 <h3>100% ग्राहक संतुष्टि</h3>
                 <p>हर प्रोजेक्ट में गुणवत्ता और विश्वास</p>
+                <div class="feature-hover"></div>
             </div>
             <div class="feature-box">
                 <div class="feature-icon">
@@ -87,6 +114,7 @@
                 </div>
                 <h3>समय पर डिलीवरी</h3>
                 <p>वादे के अनुसार समय पर काम पूरा</p>
+                <div class="feature-hover"></div>
             </div>
             <div class="feature-box">
                 <div class="feature-icon">
@@ -94,36 +122,38 @@
                 </div>
                 <h3>किफायती दरें</h3>
                 <p>बजट में बेहतरीन निर्माण</p>
+                <div class="feature-hover"></div>
             </div>
         </div>
     </div>
 
     <!-- About Preview Section -->
-    <div class="about-preview">
+    <div class="about-preview reveal">
         <div class="about-container">
             <div class="about-content">
-                <h2>समस्तीपुर की सबसे भरोसेमंद निर्माण कंपनी</h2>
+                <h2>समस्तीपुर की <span>सबसे भरोसेमंद</span> निर्माण कंपनी</h2>
                 <p>पिछले 45 वर्षों से हम समस्तीपुर और आसपास के क्षेत्रों में गुणवत्तापूर्ण निर्माण सेवाएं प्रदान कर रहे हैं। हमारी टीम अनुभवी इंजीनियरों और कुशल कारीगरों के साथ आपके सपनों के घर को हकीकत में बदलती है।</p>
                 <div class="about-stats">
                     <div class="stat">
-                        <span class="stat-number">1000+</span>
+                        <span class="stat-number" data-count="1000">0</span>
                         <span class="stat-label">प्रोजेक्ट्स</span>
                     </div>
                     <div class="stat">
-                        <span class="stat-number">45+</span>
+                        <span class="stat-number" data-count="45">0</span>
                         <span class="stat-label">साल का अनुभव</span>
                     </div>
                     <div class="stat">
-                        <span class="stat-number">500+</span>
+                        <span class="stat-number" data-count="500">0</span>
                         <span class="stat-label">खुश ग्राहक</span>
                     </div>
                 </div>
                 <a href="hindi_about.html" class="about-btn">और जानें <i class="fa-solid fa-arrow-right"></i></a>
             </div>
             <div class="about-image">
-                <div class="about-img-box" style="background-image: url('construction-site.jpg');">
+                <div class="about-img-box">
                     <div class="experience-badge">
                         <span>45+ Years</span>
+                        <small>of Excellence</small>
                     </div>
                 </div>
             </div>
@@ -131,39 +161,51 @@
     </div>
 
     <!-- Services Preview -->
-    <div class="services-preview">
+    <div class="services-preview reveal">
         <div class="services-header">
-            <h2>हमारी प्रमुख सेवाएं</h2>
+            <h2>हमारी <span>प्रमुख सेवाएं</span></h2>
             <p>हम निर्माण की हर जरूरत के लिए सेवाएं प्रदान करते हैं</p>
         </div>
         <div class="services-grid">
             <div class="service-card">
-                <i class="fa-solid fa-building"></i>
+                <div class="service-icon-wrapper">
+                    <i class="fa-solid fa-building"></i>
+                </div>
                 <h3>घर निर्माण</h3>
                 <p>मजबूत और सुंदर घर का निर्माण</p>
             </div>
             <div class="service-card">
-                <i class="fa-solid fa-paint-roller"></i>
+                <div class="service-icon-wrapper">
+                    <i class="fa-solid fa-paint-roller"></i>
+                </div>
                 <h3>पेंटिंग</h3>
                 <p>प्रीमियम क्वालिटी पेंटिंग सेवाएं</p>
             </div>
             <div class="service-card">
-                <i class="fa-solid fa-trowel"></i>
+                <div class="service-icon-wrapper">
+                    <i class="fa-solid fa-trowel"></i>
+                </div>
                 <h3>प्लास्टरिंग</h3>
                 <p>बेहतरीन फिनिशिंग के साथ</p>
             </div>
             <div class="service-card">
-                <i class="fa-solid fa-couch"></i>
+                <div class="service-icon-wrapper">
+                    <i class="fa-solid fa-couch"></i>
+                </div>
                 <h3>इंटीरियर</h3>
                 <p>आधुनिक इंटीरियर डिजाइन</p>
             </div>
             <div class="service-card">
-                <i class="fa-solid fa-road"></i>
+                <div class="service-icon-wrapper">
+                    <i class="fa-solid fa-road"></i>
+                </div>
                 <h3>RCC रोड</h3>
                 <p>मजबूत सड़क निर्माण</p>
             </div>
             <div class="service-card">
-                <i class="fa-solid fa-water"></i>
+                <div class="service-icon-wrapper">
+                    <i class="fa-solid fa-water"></i>
+                </div>
                 <h3>प्लंबिंग</h3>
                 <p>बेहतर पानी निकासी व्यवस्था</p>
             </div>
@@ -174,25 +216,43 @@
     </div>
 
     <!-- Projects Preview -->
-    <div class="projects-preview">
-        <h2>हमारे हालिया प्रोजेक्ट्स</h2>
+    <div class="projects-preview reveal">
+        <div class="section-header">
+            <h2>हमारे <span>हालिया प्रोजेक्ट्स</span></h2>
+            <p>गर्व के साथ प्रस्तुत हैं हमारे कुछ बेहतरीन कार्य</p>
+        </div>
         <div class="projects-grid">
             <div class="project-card">
-                <div class="project-img" style="background-image: url('project_pic1.png');"></div>
+                <div class="project-img"></div>
+                <div class="project-overlay">
+                    <h4>आवासीय घर</h4>
+                    <p>समस्तीपुर</p>
+                    <a href="#" class="project-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
                 <div class="project-info">
                     <h4>आवासीय घर</h4>
                     <p>समस्तीपुर</p>
                 </div>
             </div>
             <div class="project-card">
-                <div class="project-img" style="background-image: url('proj_phot_3.png');"></div>
+                <div class="project-img"></div>
+                <div class="project-overlay">
+                    <h4>व्यावसायिक भवन</h4>
+                    <p>समस्तीपुर</p>
+                    <a href="#" class="project-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
                 <div class="project-info">
                     <h4>व्यावसायिक भवन</h4>
                     <p>समस्तीपुर</p>
                 </div>
             </div>
             <div class="project-card">
-                <div class="project-img" style="background-image: url('proj_photo_2.png');"></div>
+                <div class="project-img"></div>
+                <div class="project-overlay">
+                    <h4>आधुनिक विला</h4>
+                    <p>समस्तीपुर</p>
+                    <a href="#" class="project-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
                 <div class="project-info">
                     <h4>आधुनिक विला</h4>
                     <p>समस्तीपुर</p>
@@ -203,35 +263,94 @@
     </div>
 
     <!-- Testimonials Section -->
-    <div class="testimonials">
-        <h2>हमारे संतुष्ट ग्राहक</h2>
+    <div class="testimonials reveal">
+        <div class="section-header">
+            <h2>हमारे <span>संतुष्ट ग्राहक</span></h2>
+            <p>क्या कहते हैं हमारे ग्राहक हमारे बारे में</p>
+        </div>
         <div class="testimonials-container">
             <div class="testimonial-card">
-                <i class="fa-solid fa-quote-left"></i>
+                <div class="quote-icon">
+                    <i class="fa-solid fa-quote-left"></i>
+                </div>
                 <p>SK Construction ने मेरे घर का निर्माण बहुत ही बेहतरीन तरीके से किया। समय पर काम पूरा और गुणवत्ता उत्तम।</p>
-                <h4>- राजेश कुमार</h4>
-                <span>समस्तीपुर</span>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="author-info">
+                        <h4>- राजेश कुमार</h4>
+                        <span>समस्तीपुर</span>
+                    </div>
+                </div>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
             </div>
             <div class="testimonial-card">
-                <i class="fa-solid fa-quote-left"></i>
+                <div class="quote-icon">
+                    <i class="fa-solid fa-quote-left"></i>
+                </div>
                 <p>बहुत ही प्रोफेशनल टीम। सभी काम वादे के अनुसार पूरे किए। मैं पूरी तरह संतुष्ट हूं।</p>
-                <h4>- सीमा देवी</h4>
-                <span>समस्तीपुर</span>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="author-info">
+                        <h4>- सीमा देवी</h4>
+                        <span>समस्तीपुर</span>
+                    </div>
+                </div>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="quote-icon">
+                    <i class="fa-solid fa-quote-left"></i>
+                </div>
+                <p>बेहतरीन काम और उचित मूल्य। SK Construction की टीम बहुत ही मेहनती और ईमानदार है।</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="author-info">
+                        <h4>- अमित कुमार</h4>
+                        <span>समस्तीपुर</span>
+                    </div>
+                </div>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- CTA Section -->
-    <div class="cta-section">
+    <div class="cta-section reveal">
         <div class="cta-container">
-            <h2>अपने सपनों का घर बनवाने के लिए आज ही संपर्क करें</h2>
+            <h2>अपने <span>सपनों का घर</span> बनवाने के लिए आज ही संपर्क करें</h2>
             <p>मुफ्त परामर्श और एस्टीमेट के लिए हमसे जुड़ें</p>
             <div class="cta-buttons">
                 <a href="https://wa.me/qr/ZQEKIEU4V5SMN1" target="_blank" class="cta-whatsapp">
                     <i class="fa-brands fa-whatsapp"></i> WhatsApp करें
+                    <span class="btn-hover"></span>
                 </a>
                 <a href="tel:+919955604576" class="cta-call">
                     <i class="fa-solid fa-phone"></i> कॉल करें
+                    <span class="btn-hover"></span>
                 </a>
             </div>
         </div>
@@ -265,10 +384,10 @@
             <div class="footer-section">
                 <h2>Quick Links</h2> 
                 <div class="cont_box">
-                    <a onclick="location.href='index.html'"><i class="fa-solid fa-angle-right"></i> Home</a>
-                    <a onclick="location.href='Services.html'"><i class="fa-solid fa-angle-right"></i> Services</a>
-                    <a onclick="location.href='projects.html'"><i class="fa-solid fa-angle-right"></i> Gallery</a>
-                    <a onclick="location.href='hindi_about.html'"><i class="fa-solid fa-angle-right"></i> About Us</a>
+                    <a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a>
+                    <a href="Services.html"><i class="fa-solid fa-angle-right"></i> Services</a>
+                    <a href="projects.html"><i class="fa-solid fa-angle-right"></i> Gallery</a>
+                    <a href="hindi_about.html"><i class="fa-solid fa-angle-right"></i> About Us</a>
                 </div> 
             </div>
 
@@ -289,18 +408,9 @@
     </div>
 
     <div class="footer-bottom">
-        <p>© 2024 SK Construction Company. All rights reserved. | Designed in Samastipur, Bihar</p>
+        <p>© 2024 SK Construction Company. All rights reserved. | Designed with <i class="fa-solid fa-heart"></i> in Samastipur, Bihar</p>
     </div>
 
-    <script>
-        // Navigation links
-        document.querySelectorAll('[onclick*="location.href"]').forEach(element => {
-            element.addEventListener('click', function(e) {
-                e.preventDefault();
-                const match = this.getAttribute('onclick').match(/'([^']+)'/);
-                if(match) window.location.href = match[1];
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
