@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             const whatsappMsg = `Hello SK Construction!%0A%0A*New Enquiry*%0AName: ${name}%0APhone: ${phone}%0AService: ${service}%0AMessage: ${message}`;
             
-            window.open(`https://wa.me/919955604576?text=${whatsappMsg}`, '_blank');
+            window.open(`https://wa.me/919523234108?text=${whatsappMsg}`, '_blank');
             
             alert('धन्यवाद! हम जल्द ही आपसे संपर्क करेंगे।');
             this.reset();
