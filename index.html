@@ -3,414 +3,526 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-    <title>SK Construction Company – Samastipur | आपके सपनों का घर | Best Construction in Samastipur</title>
-    <link rel="stylesheet" href="ind_style.css">
+    <meta name="description" content="SK Construction - Samastipur, Bihar की भरोसेमंद निर्माण कंपनी। 45+ साल का अनुभव, 300+ प्रोजेक्ट्स। House Construction, Civil Work, Tiles, Painting, Plumbing, Electrical, RCC Road, Labour Supply।">
+    <meta name="keywords" content="Construction Service in Samastipur, House Contractor Bihar, Civil Work Contractor Samastipur, Best Construction Service in Samastipur, SK Construction, घर निर्माण समस्तीपुर, RCC Road Construction Samastipur">
+    <meta name="author" content="SK Construction">
+    <meta name="robots" content="index, follow">
+    <title>SK Construction | Best Construction Service in Samastipur | 45+ Years Experience</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="1-removebg-preview.png" type="image/x-icon">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="sk-logo.png" type="image/x-icon">
 </head>
 <body>
 
-    <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/qr/ZQEKIEU4V5SMN1" target="_blank" class="whatsapp-float" id="whatsappFloat">
+    <!-- ==================== WHATSAPP FLOATING BUTTON ==================== -->
+    <a href="https://wa.me/919955604576?text=Hello%20SK%20Construction%2C%20I%20need%20information%20about%20construction%20services." target="_blank" class="whatsapp-float" id="whatsappFloat">
         <i class="fa-brands fa-whatsapp"></i>
-        <span class="tooltip">Need Help? Chat with us!</span>
+        <span class="tooltip">WhatsApp पर बात करें</span>
     </a>
 
-    <!-- Call Floating Button -->
+    <!-- ==================== CALL FLOATING BUTTON ==================== -->
     <a href="tel:+919955604576" class="call-float" id="callFloat">
         <i class="fa-solid fa-phone"></i>
-        <span class="tooltip">Call Now!</span>
+        <span class="tooltip">अभी कॉल करें</span>
     </a>
 
-    <!-- Back to Top Button -->
+    <!-- ==================== BACK TO TOP BUTTON ==================== -->
     <button id="backToTop" class="back-to-top">
         <i class="fa-solid fa-arrow-up"></i>
     </button>
 
-    <!-- Header Section -->
-    <div class="header">
-        <div id="head_color">
-            <div id="logodiv">
-                <div class="logo"></div>
-            </div>
-            <div class="name_div">
-                <h1>SK <span>Construction</span> Company</h1>
-                <div class="contact">
-                    <i class="fa-solid fa-phone"></i>
-                    <span>+91-9955604576 | +91-9523234108</span>
-                </div>
-            </div>
-            
-            <div class="header_icon">
-                <div class="icon_size">
-                    <a href="https://www.instagram.com/s.k_construction_company" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/share/1Xhy9SS1kB/" target="_blank" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://wa.me/qr/ZQEKIEU4V5SMN1" target="_blank" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Hero Section with Language Selection -->
-    <div id="photo">
-        <div class="hero-overlay"></div>
-        <div id="containt_part">
-            <div id="box1" class="color">
-                <div class="welcome-badge">
-                    <span class="badge-pill">🏗️ स्वागत है | Welcome to SK Construction</span>
-                </div>
-                <div id="ques_div_lang">
-                    <h2>कृपया आगे बढ़ने के लिए अपनी भाषा चुनें</h2>
-                    <p class="sub-text">Please select your preferred language to continue</p>
-                </div>
-                <div id="option_langu">
-                    <div id="hindi_lan" class="lang_option" data-lang="hindi">
-                        <i class="fa-solid fa-language"></i>
-                        हिन्दी 
-                        <i class="fa-solid fa-hand-pointer"></i>  
-                    </div>
-                    <div id="english_lan" class="lang_option" data-lang="english">
-                        <i class="fa-solid fa-language"></i>
-                        English
-                        <i class="fa-solid fa-hand-pointer"></i>
+    <!-- ==================== HEADER SECTION ==================== -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="sk-logo.png" alt="SK Construction Logo" class="logo-img" onerror="this.src='https://placehold.co/50x50/e65c00/white?text=SK'">
+                    <div class="logo-text">
+                        <h1>SK <span>Construction</span></h1>
+                        <p>45+ साल का भरोसा, मजबूत निर्माण</p>
                     </div>
                 </div>
-                <div class="trust-badges">
-                    <span><i class="fa-solid fa-star"></i> 45+ Years</span>
-                    <span><i class="fa-solid fa-house"></i> 1000+ Projects</span>
-                    <span><i class="fa-solid fa-users"></i> 500+ Clients</span>
-                </div>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <nav class="navbar" id="navbar">
+                    <ul class="nav-menu">
+                        <li><a href="#home" class="nav-link active">होम</a></li>
+                        <li><a href="#about" class="nav-link">हमारे बारे में</a></li>
+                        <li><a href="#services" class="nav-link">सेवाएं</a></li>
+                        <li><a href="#gallery" class="nav-link">गैलरी</a></li>
+                        <li><a href="#contact" class="nav-link">संपर्क करें</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
-    </div>
+    </header>
 
-    <!-- Features Section -->
-    <div class="features-section reveal">
-        <div class="section-header">
-            <h2>Why Choose <span>SK Construction</span>?</h2>
-            <p>हमारे साथ क्यों जुड़ें? | Why Choose Us?</p>
-        </div>
-        <div class="features-container">
-            <div class="feature-box">
-                <div class="feature-icon">
-                    <i class="fa-solid fa-trophy"></i>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge">🏗️ 45+ साल का भरोसा, मजबूत निर्माण</span>
+                <h1>Best Construction Service in <span>Samastipur</span></h1>
+                <p>समस्तीपुर की सबसे भरोसेमंद निर्माण कंपनी | Quality, Trust & Excellence Since 1979</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">मुफ्त एस्टीमेट प्राप्त करें</a>
+                    <a href="tel:+919955604576" class="btn btn-outline">अभी कॉल करें</a>
                 </div>
-                <h3>45+ Years Experience</h3>
-                <p>समस्तीपुर में निर्माण का विश्वसनीय अनुभव</p>
-                <div class="feature-hover"></div>
-            </div>
-            <div class="feature-box">
-                <div class="feature-icon">
-                    <i class="fa-solid fa-handshake"></i>
-                </div>
-                <h3>100% ग्राहक संतुष्टि</h3>
-                <p>हर प्रोजेक्ट में गुणवत्ता और विश्वास</p>
-                <div class="feature-hover"></div>
-            </div>
-            <div class="feature-box">
-                <div class="feature-icon">
-                    <i class="fa-solid fa-clock"></i>
-                </div>
-                <h3>समय पर डिलीवरी</h3>
-                <p>वादे के अनुसार समय पर काम पूरा</p>
-                <div class="feature-hover"></div>
-            </div>
-            <div class="feature-box">
-                <div class="feature-icon">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>
-                </div>
-                <h3>किफायती दरें</h3>
-                <p>बजट में बेहतरीन निर्माण</p>
-                <div class="feature-hover"></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- About Preview Section -->
-    <div class="about-preview reveal">
-        <div class="about-container">
-            <div class="about-content">
-                <h2>समस्तीपुर की <span>सबसे भरोसेमंद</span> निर्माण कंपनी</h2>
-                <p>पिछले 45 वर्षों से हम समस्तीपुर और आसपास के क्षेत्रों में गुणवत्तापूर्ण निर्माण सेवाएं प्रदान कर रहे हैं। हमारी टीम अनुभवी इंजीनियरों और कुशल कारीगरों के साथ आपके सपनों के घर को हकीकत में बदलती है।</p>
-                <div class="about-stats">
+                <div class="hero-stats">
                     <div class="stat">
-                        <span class="stat-number" data-count="1000">0</span>
-                        <span class="stat-label">प्रोजेक्ट्स</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number" data-count="45">0</span>
+                        <span class="stat-number" data-count="45">45+</span>
                         <span class="stat-label">साल का अनुभव</span>
                     </div>
                     <div class="stat">
-                        <span class="stat-number" data-count="500">0</span>
+                        <span class="stat-number" data-count="300">300+</span>
+                        <span class="stat-label">प्रोजेक्ट्स</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="500">500+</span>
                         <span class="stat-label">खुश ग्राहक</span>
                     </div>
                 </div>
-                <a href="hindi_about.html" class="about-btn">और जानें <i class="fa-solid fa-arrow-right"></i></a>
             </div>
-            <div class="about-image">
-                <div class="about-img-box">
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>हमारे बारे में <span>About Us</span></h2>
+                <p>समस्तीपुर में नंबर 1 निर्माण कंपनी</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>SK Construction - <span>45+ Years of Trust</span></h3>
+                    <p>पिछले 45 वर्षों से हम समस्तीपुर और आसपास के क्षेत्रों में गुणवत्तापूर्ण निर्माण सेवाएं प्रदान कर रहे हैं। हमारी टीम अनुभवी इंजीनियरों और कुशल कारीगरों के साथ आपके सपनों के घर को हकीकत में बदलती है।</p>
+                    
+                    <div class="about-features">
+                        <div class="feature"><i class="fas fa-check-circle"></i> 100% ग्राहक संतुष्टि</div>
+                        <div class="feature"><i class="fas fa-check-circle"></i> समय पर डिलीवरी</div>
+                        <div class="feature"><i class="fas fa-check-circle"></i> किफायती दरें</div>
+                        <div class="feature"><i class="fas fa-check-circle"></i> अनुभवी कारीगर</div>
+                    </div>
+                    
+                    <div class="about-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"आपका सपना, हमारा संकल्प"</p>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <img src="https://placehold.co/600x500/e65c00/white?text=SK+Construction+Team" alt="SK Construction Team" class="about-img" id="aboutImg">
                     <div class="experience-badge">
-                        <span>45+ Years</span>
-                        <small>of Excellence</small>
+                        <span>45+</span>
+                        <p>Years of Excellence</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Services Preview -->
-    <div class="services-preview reveal">
-        <div class="services-header">
-            <h2>हमारी <span>प्रमुख सेवाएं</span></h2>
-            <p>हम निर्माण की हर जरूरत के लिए सेवाएं प्रदान करते हैं</p>
-        </div>
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="service-icon-wrapper">
-                    <i class="fa-solid fa-building"></i>
-                </div>
-                <h3>घर निर्माण</h3>
-                <p>मजबूत और सुंदर घर का निर्माण</p>
+    <!-- ==================== SERVICES SECTION ==================== -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>हमारी <span>सेवाएं</span></h2>
+                <p>हम निर्माण की हर जरूरत के लिए सेवाएं प्रदान करते हैं</p>
             </div>
-            <div class="service-card">
-                <div class="service-icon-wrapper">
-                    <i class="fa-solid fa-paint-roller"></i>
-                </div>
-                <h3>पेंटिंग</h3>
-                <p>प्रीमियम क्वालिटी पेंटिंग सेवाएं</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon-wrapper">
-                    <i class="fa-solid fa-trowel"></i>
-                </div>
-                <h3>प्लास्टरिंग</h3>
-                <p>बेहतरीन फिनिशिंग के साथ</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon-wrapper">
-                    <i class="fa-solid fa-couch"></i>
-                </div>
-                <h3>इंटीरियर</h3>
-                <p>आधुनिक इंटीरियर डिजाइन</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon-wrapper">
-                    <i class="fa-solid fa-road"></i>
-                </div>
-                <h3>RCC रोड</h3>
-                <p>मजबूत सड़क निर्माण</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon-wrapper">
-                    <i class="fa-solid fa-water"></i>
-                </div>
-                <h3>प्लंबिंग</h3>
-                <p>बेहतर पानी निकासी व्यवस्था</p>
-            </div>
-        </div>
-        <div class="services-btn">
-            <a href="Services.html" class="view-all-btn">सभी सेवाएं देखें <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-    </div>
-
-    <!-- Projects Preview -->
-    <div class="projects-preview reveal">
-        <div class="section-header">
-            <h2>हमारे <span>हालिया प्रोजेक्ट्स</span></h2>
-            <p>गर्व के साथ प्रस्तुत हैं हमारे कुछ बेहतरीन कार्य</p>
-        </div>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-img"></div>
-                <div class="project-overlay">
-                    <h4>आवासीय घर</h4>
-                    <p>समस्तीपुर</p>
-                    <a href="#" class="project-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-                <div class="project-info">
-                    <h4>आवासीय घर</h4>
-                    <p>समस्तीपुर</p>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-img"></div>
-                <div class="project-overlay">
-                    <h4>व्यावसायिक भवन</h4>
-                    <p>समस्तीपुर</p>
-                    <a href="#" class="project-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-                <div class="project-info">
-                    <h4>व्यावसायिक भवन</h4>
-                    <p>समस्तीपुर</p>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-img"></div>
-                <div class="project-overlay">
-                    <h4>आधुनिक विला</h4>
-                    <p>समस्तीपुर</p>
-                    <a href="#" class="project-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-                <div class="project-info">
-                    <h4>आधुनिक विला</h4>
-                    <p>समस्तीपुर</p>
-                </div>
-            </div>
-        </div>
-        <a href="projects.html" class="view-all-btn">सभी प्रोजेक्ट्स देखें <i class="fa-solid fa-arrow-right"></i></a>
-    </div>
-
-    <!-- Testimonials Section -->
-    <div class="testimonials reveal">
-        <div class="section-header">
-            <h2>हमारे <span>संतुष्ट ग्राहक</span></h2>
-            <p>क्या कहते हैं हमारे ग्राहक हमारे बारे में</p>
-        </div>
-        <div class="testimonials-container">
-            <div class="testimonial-card">
-                <div class="quote-icon">
-                    <i class="fa-solid fa-quote-left"></i>
-                </div>
-                <p>SK Construction ने मेरे घर का निर्माण बहुत ही बेहतरीन तरीके से किया। समय पर काम पूरा और गुणवत्ता उत्तम।</p>
-                <div class="testimonial-author">
-                    <div class="author-avatar">
-                        <i class="fa-solid fa-user"></i>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
                     </div>
-                    <div class="author-info">
-                        <h4>- राजेश कुमार</h4>
-                        <span>समस्तीपुर</span>
+                    <h3>House Construction</h3>
+                    <p>RCC ढांचा, मजबूत और सुंदर घर निर्माण</p>
+                    <span class="service-tag">RCC Building</span>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-trowel"></i>
+                    </div>
+                    <h3>Civil Work</h3>
+                    <p>ईंट, प्लास्टर, सीमेंट वर्क - पक्का निर्माण</p>
+                    <span class="service-tag">Brick/Plaster</span>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-th-large"></i>
+                    </div>
+                    <h3>Tiles & Marble Work</h3>
+                    <p>आधुनिक टाइल्स, मार्बल फिनिशिंग</p>
+                    <span class="service-tag">Premium Quality</span>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-roller"></i>
+                    </div>
+                    <h3>Painting Work</h3>
+                    <p>इंटीरियर और एक्सटीरियर पेंटिंग</p>
+                    <span class="service-tag">Interior/Exterior</span>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3>Plumbing Work</h3>
+                    <p>वाटर पाइपलाइन, बाथरूम फिटिंग</p>
+                    <span class="service-tag">Leak Proof</span>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Electrical Work</h3>
+                    <p>हाउस वायरिंग, रिपेयर, फिटिंग</p>
+                    <span class="service-tag">Safe Wiring</span>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <h3>RCC Road Construction</h3>
+                    <p>मजबूत और टिकाऊ सड़क निर्माण</p>
+                    <span class="service-tag">Heavy Load</span>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Labour Supply</h3>
+                    <p>अनुभवी मजदूर और कारीगर उपलब्ध</p>
+                    <span class="service-tag">Skilled Workers</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== GALLERY SECTION ==================== -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>हमारे <span>प्रोजेक्ट्स</span></h2>
+                <p>हमारे कुछ बेहतरीन निर्माण कार्य</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://placehold.co/600x400/2d2d2d/white?text=Modern+House+Construction" alt="House Construction Samastipur">
+                    <div class="gallery-overlay">
+                        <h4>आधुनिक घर निर्माण</h4>
+                        <p>समस्तीपुर</p>
                     </div>
                 </div>
-                <div class="rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <div class="quote-icon">
-                    <i class="fa-solid fa-quote-left"></i>
-                </div>
-                <p>बहुत ही प्रोफेशनल टीम। सभी काम वादे के अनुसार पूरे किए। मैं पूरी तरह संतुष्ट हूं।</p>
-                <div class="testimonial-author">
-                    <div class="author-avatar">
-                        <i class="fa-solid fa-user"></i>
-                    </div>
-                    <div class="author-info">
-                        <h4>- सीमा देवी</h4>
-                        <span>समस्तीपुर</span>
+                
+                <div class="gallery-item">
+                    <img src="https://placehold.co/600x400/e65c00/white?text=Tiles+Work" alt="Tiles and Marble Work">
+                    <div class="gallery-overlay">
+                        <h4>प्रीमियम टाइल्स वर्क</h4>
+                        <p>समस्तीपुर</p>
                     </div>
                 </div>
-                <div class="rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <div class="quote-icon">
-                    <i class="fa-solid fa-quote-left"></i>
-                </div>
-                <p>बेहतरीन काम और उचित मूल्य। SK Construction की टीम बहुत ही मेहनती और ईमानदार है।</p>
-                <div class="testimonial-author">
-                    <div class="author-avatar">
-                        <i class="fa-solid fa-user"></i>
-                    </div>
-                    <div class="author-info">
-                        <h4>- अमित कुमार</h4>
-                        <span>समस्तीपुर</span>
+                
+                <div class="gallery-item">
+                    <img src="https://placehold.co/600x400/2d2d2d/white?text=RCC+Road+Construction" alt="RCC Road Construction">
+                    <div class="gallery-overlay">
+                        <h4>RCC सड़क निर्माण</h4>
+                        <p>समस्तीपुर</p>
                     </div>
                 </div>
-                <div class="rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
+                
+                <div class="gallery-item">
+                    <img src="https://placehold.co/600x400/e65c00/white?text=Plumbing+Work" alt="Plumbing Work">
+                    <div class="gallery-overlay">
+                        <h4>प्लंबिंग सर्विस</h4>
+                        <p>समस्तीपुर</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://placehold.co/600x400/2d2d2d/white?text=Electrical+Work" alt="Electrical Work">
+                    <div class="gallery-overlay">
+                        <h4>इलेक्ट्रिकल सर्विस</h4>
+                        <p>समस्तीपुर</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://placehold.co/600x400/e65c00/white?text=Painting+Work" alt="Painting Work">
+                    <div class="gallery-overlay">
+                        <h4>पेंटिंग सर्विस</h4>
+                        <p>समस्तीपुर</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- CTA Section -->
-    <div class="cta-section reveal">
-        <div class="cta-container">
-            <h2>अपने <span>सपनों का घर</span> बनवाने के लिए आज ही संपर्क करें</h2>
-            <p>मुफ्त परामर्श और एस्टीमेट के लिए हमसे जुड़ें</p>
-            <div class="cta-buttons">
-                <a href="https://wa.me/qr/ZQEKIEU4V5SMN1" target="_blank" class="cta-whatsapp">
-                    <i class="fa-brands fa-whatsapp"></i> WhatsApp करें
-                    <span class="btn-hover"></span>
-                </a>
-                <a href="tel:+919955604576" class="cta-call">
-                    <i class="fa-solid fa-phone"></i> कॉल करें
-                    <span class="btn-hover"></span>
-                </a>
+    <!-- ==================== WHY CHOOSE US ==================== -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="section-header">
+                <h2>हमें क्यों <span>चुनें?</span></h2>
+                <p>Why Choose SK Construction?</p>
             </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <div id="footer">
-        <div class="cont_main">
-            <div class="footer-section">
-                <h2>Company Info</h2>
-                <div class="cont_box">
-                    <p><i class="fa-solid fa-building"></i> SK Construction Company</p>
-                    <p><i class="fa-solid fa-phone"></i> +91-9955604576</p>
-                    <p><i class="fa-solid fa-phone"></i> +91-9523234108</p>
-                    <p><i class="fa-solid fa-envelope"></i> kumarsunil854098@gmail.com</p>
-                    <p><i class="fa-solid fa-location-dot"></i> Samastipur, Bihar</p>
+            
+            <div class="features-grid">
+                <div class="feature-box">
+                    <i class="fas fa-medal"></i>
+                    <h3>45+ Years Experience</h3>
+                    <p>समस्तीपुर में निर्माण का विश्वसनीय अनुभव</p>
+                </div>
+                
+                <div class="feature-box">
+                    <i class="fas fa-clock"></i>
+                    <h3>On-Time Delivery</h3>
+                    <p>वादे के अनुसार समय पर काम पूरा</p>
+                </div>
+                
+                <div class="feature-box">
+                    <i class="fas fa-rupee-sign"></i>
+                    <h3>Best Price Guarantee</h3>
+                    <p>बजट में बेहतरीन निर्माण</p>
+                </div>
+                
+                <div class="feature-box">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Quality Material</h3>
+                    <p>प्रीमियम क्वालिटी सामग्री का उपयोग</p>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="footer-section"> 
-                <h2>Our Services</h2>
-                <div class="cont_box">
-                    <p><i class="fa-solid fa-check"></i> Building Construction</p>
-                    <p><i class="fa-solid fa-check"></i> Painting</p>
-                    <p><i class="fa-solid fa-check"></i> Plastering</p>
-                    <p><i class="fa-solid fa-check"></i> Interior Work</p>
-                    <p><i class="fa-solid fa-check"></i> Renovation</p>
+    <!-- ==================== TESTIMONIALS ==================== -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>ग्राहकों की <span>राय</span></h2>
+                <p>What Our Clients Say</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p>SK Construction ने मेरे घर का निर्माण बहुत ही बेहतरीन तरीके से किया। समय पर काम पूरा और गुणवत्ता उत्तम।</p>
+                    <div class="client-info">
+                        <i class="fas fa-user-circle"></i>
+                        <div>
+                            <h4>राजेश कुमार</h4>
+                            <span>समस्तीपुर</span>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p>बहुत ही प्रोफेशनल टीम। सभी काम वादे के अनुसार पूरे किए। मैं पूरी तरह संतुष्ट हूं।</p>
+                    <div class="client-info">
+                        <i class="fas fa-user-circle"></i>
+                        <div>
+                            <h4>सीमा देवी</h4>
+                            <span>समस्तीपुर</span>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p>बेहतरीन काम और उचित मूल्य। SK Construction की टीम बहुत ही मेहनती और ईमानदार है।</p>
+                    <div class="client-info">
+                        <i class="fas fa-user-circle"></i>
+                        <div>
+                            <h4>अमित कुमार</h4>
+                            <span>समस्तीपुर</span>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="footer-section">
-                <h2>Quick Links</h2> 
-                <div class="cont_box">
-                    <a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a>
-                    <a href="Services.html"><i class="fa-solid fa-angle-right"></i> Services</a>
-                    <a href="projects.html"><i class="fa-solid fa-angle-right"></i> Gallery</a>
-                    <a href="hindi_about.html"><i class="fa-solid fa-angle-right"></i> About Us</a>
-                </div> 
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>संपर्क <span>करें</span></h2>
+                <p>मुफ्त परामर्श और एस्टीमेट के लिए आज ही संपर्क करें</p>
             </div>
-
-            <div class="footer-section"> 
-                <h2>Follow Us</h2>
-                <div class="cont_box social-box">
-                    <a href="https://wa.me/qr/ZQEKIEU4V5SMN1" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-                    <a href="https://www.instagram.com/s.k_construction_company" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
-                    <a href="https://www.facebook.com/share/1Xhy9SS1kB/" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
-                </div> 
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>हमारा पता</h3>
+                        <p>SK Construction<br>Khanpur, Ilmasnagar<br>Samastipur, Bihar - 848101</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <i class="fas fa-phone-alt"></i>
+                        <h3>फोन नंबर</h3>
+                        <p><a href="tel:+919955604576">+91-9955604576</a><br>
+                        <a href="tel:+919523234108">+91-9523234108</a></p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <i class="fab fa-whatsapp"></i>
+                        <h3>WhatsApp</h3>
+                        <p><a href="https://wa.me/919955604576" target="_blank">+91-9955604576</a></p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>ईमेल</h3>
+                        <p><a href="mailto:kumarsunil854098@gmail.com">kumarsunil854098@gmail.com</a></p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>कार्य समय</h3>
+                        <p>सोमवार - शनिवार: 9 AM - 6 PM<br>रविवार: अपॉइंटमेंट द्वारा</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="आपका नाम *" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="मोबाइल नंबर *" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="ईमेल (वैकल्पिक)">
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">सेवा चुनें *</option>
+                                <option>House Construction (घर निर्माण)</option>
+                                <option>Civil Work (सिविल वर्क)</option>
+                                <option>Tiles & Marble Work (टाइल्स)</option>
+                                <option>Painting Work (पेंटिंग)</option>
+                                <option>Plumbing Work (प्लंबिंग)</option>
+                                <option>Electrical Work (इलेक्ट्रिकल)</option>
+                                <option>RCC Road Construction (सड़क निर्माण)</option>
+                                <option>Labour Supply (लेबर सप्लाई)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="4" placeholder="आपका संदेश..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn">संदेश भेजें <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="footer_comp">
-        <div class="logo"></div>
-        <h1>SK Construction Company</h1>
-    </div>
+    <!-- ==================== CTA SECTION ==================== -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-container">
+                <h2>अपने <span>सपनों का घर</span> बनवाने के लिए आज ही संपर्क करें</h2>
+                <p>Free Consultation | Best Price | Quality Work</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/919955604576?text=Hello%20SK%20Construction%2C%20I%20need%20information%20about%20construction%20services." target="_blank" class="cta-whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i> WhatsApp करें
+                    </a>
+                    <a href="tel:+919955604576" class="cta-call">
+                        <i class="fa-solid fa-phone"></i> कॉल करें
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="footer-bottom">
-        <p>© 2024 SK Construction Company. All rights reserved. | Designed with <i class="fa-solid fa-heart"></i> in Samastipur, Bihar</p>
-    </div>
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SK <span>Construction</span></h3>
+                    <p>समस्तीपुर की सबसे भरोसेमंद निर्माण कंपनी। 45+ साल का अनुभव, 300+ सफल प्रोजेक्ट्स।</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/s.k_construction_company" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/share/1Xhy9SS1kB/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/919955604576" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>त्वरित लिंक</h4>
+                    <ul>
+                        <li><a href="#home">होम</a></li>
+                        <li><a href="#about">हमारे बारे में</a></li>
+                        <li><a href="#services">सेवाएं</a></li>
+                        <li><a href="#gallery">गैलरी</a></li>
+                        <li><a href="#contact">संपर्क करें</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>हमारी सेवाएं</h4>
+                    <ul>
+                        <li>House Construction</li>
+                        <li>Civil Work</li>
+                        <li>Tiles & Marble Work</li>
+                        <li>Painting Work</li>
+                        <li>Plumbing & Electrical</li>
+                        <li>RCC Road & Labour Supply</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>संपर्क करें</h4>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-phone"></i> <a href="tel:+919955604576">+91-9955604576</a></li>
+                        <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/919955604576">+91-9955604576</a></li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+919523234108">+91-9523234108</a></li>
+                        <li><i class="fas fa-envelope"></i> kumarsunil854098@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Khanpur, Ilmasnagar, Samastipur, Bihar</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2024 SK Construction Company. सर्वाधिकार सुरक्षित | Designed for Samastipur, Bihar</p>
+                <p class="seo-text">Construction Service in Samastipur | House Contractor Bihar | Civil Work Contractor Samastipur | Best Construction Service in Samastipur</p>
+            </div>
+        </div>
+    </footer>
 
-    <script src="script.js"></script>
+    <!-- JavaScript File -->
+    <script src="main.js"></script>
 </body>
 </html>
